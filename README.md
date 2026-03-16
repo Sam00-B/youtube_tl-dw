@@ -1,0 +1,2 @@
+# youtube-tldw
+The YouTube TL;DW Dashboard is a web application that generates quick summaries of YouTube videos. Users paste a YouTube link, and the system retrieves the video transcript and uses AI to create a concise summary of the key points. The project uses FastAPI (Python) for the backend and HTML/JavaScript for the frontend. It is developed using Visual Studio Code with GitHub for version control and deployment, demonstrating a simple full-stack application that integrates AI to make long video content easier to understand.
