@@ -15,7 +15,7 @@ async function getSummary() {
 
         try {
             // Call your Python backend
-            const response = await fetch(`https://youtube-tl-dw-backend.onrender.com/summarize?url=${encodeURIComponent(url)}`);
+            const response = await fetch(`http://127.0.0.1:8000/summarize?url=/summarize?url=${encodeURIComponent(url)}`);
             const data = await response.json();
 
             if (response.ok) {
