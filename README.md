@@ -58,6 +58,8 @@ Open your terminal, ensure you are in the youtube_tl-dw folder, and run:
 
 Bash
 uvicorn main:app --reload
+
+
 Access the Frontend:
 
 Option A (Local): Open your file explorer, locate the project folder, and double-click the index.html file to open it in your browser.
