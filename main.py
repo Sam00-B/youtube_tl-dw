@@ -37,11 +37,26 @@ async def summarize_video(url: str):
 
         # 3. Create the prompt for the AI
         prompt = f"""
-        Read the following transcript from a YouTube video and provide:
-        1. A brief  summary.
-        2. key takeaways (bullet points).
-        
-        Transcript: {transcript_text}
+    Analyze this YouTube transcript and provide a detailed response in plain text.
+
+    Rules:
+
+    Do not use markdown symbols like #, *, or ---
+    Write in clean readable paragraphs
+    Avoid vague or generic summaries
+    Explain the main arguments, context, and conclusions clearly
+
+    Include:
+    Detailed Summary:
+    Explain the main discussion, arguments, and overall message.
+
+    Key Takeaways:
+    Write clear points with explanations and examples from the transcript.
+
+    Important Statements:
+    List notable quotes or major claims from the speaker.
+
+    Transcript:{transcript_text}
         """
 
         # 4. Ask the AI and return the response
