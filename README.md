@@ -1,6 +1,7 @@
 # 🎥 YouTube TLDW (Too Long; Didn't Watch) Summarizer
 
 An AI-powered web application that instantly generates concise, easy-to-read summaries of YouTube videos. By extracting video transcripts and processing them through Google's Gemini AI, this tool saves time and extracts key information from long-form content in seconds.
+> ⚠️ **Live Demo Notice:** The frontend is hosted via GitHub Pages, but the app requires the local backend to be running to function. This is because YouTube blocks transcript requests from cloud-hosted servers — so the backend must run on your machine. See [Installation](#installation) to get it running locally.
 
 ## ✨ Features
 * **Instant Transcription:** Automatically extracts accurate transcripts directly from YouTube videos.
@@ -36,9 +37,6 @@ Because the frontend requires the local backend to bypass YouTube's protections,
 ### Prerequisites
 * Python 3.x installed
 * A free [Google Gemini API Key](https://aistudio.google.com/app/apikey)
-
-### Installation
-
 ### Installation
 
 1. **Clone the repository:**
