@@ -1,7 +1,7 @@
 # 🎥 YouTube TLDW (Too Long; Didn't Watch) Summarizer
 
 An AI-powered web application that instantly generates concise, easy-to-read summaries of YouTube videos. By extracting video transcripts and processing them through Google's Gemini AI, this tool saves time and extracts key information from long-form content in seconds.
-> ⚠️ **Live Demo Notice:** The frontend is hosted via GitHub Pages, but the app requires the local backend to be running to function. This is because YouTube blocks transcript requests from cloud-hosted servers — so the backend must run on your machine. See [Installation](#installation) to get it running locally.
+> ⚠️ **Live Demo Notice:** The frontend is hosted render, but the app requires the local backend to be running to function. This is because YouTube blocks transcript requests from cloud-hosted servers — so the backend must run on your machine. See [Installation](#installation) to get it running locally.
 
 ## ✨ Features
 * **Instant Transcription:** Automatically extracts accurate transcripts directly from YouTube videos.
@@ -10,7 +10,7 @@ An AI-powered web application that instantly generates concise, easy-to-read sum
 * **Clean UI:** A lightweight, vanilla HTML/CSS/JS frontend for a seamless user experience.
 
 ## 🛠️ Tech Stack
-* **Frontend:** HTML, CSS, Vanilla JavaScript (Hosted via GitHub Pages)
+* **Frontend:** HTML, CSS, Vanilla JavaScript (Hosted via render)
 * **Backend:** Python, FastAPI, Uvicorn
 * **APIs & Libraries:** `youtube-transcript-api`, `google-generativeai`, `python-dotenv`
 
@@ -24,7 +24,7 @@ During the deployment phase of this project, I encountered a common industry cha
 ### The Solution: A Hybrid "Local-to-Cloud" Architecture
 Instead of paying for premium residential proxies to bypass the data center block, I engineered a hybrid architecture to keep the project 100% free while maintaining a public-facing UI:
 
-* **Frontend (Cloud):** The frontend is deployed publicly and hosted via **GitHub Pages**. This provides a clean, accessible link for portfolio reviews.
+* **Frontend (Cloud):** The frontend is deployed publicly and hosted via **render**. This provides a clean, accessible link for portfolio reviews.
 * **Backend (Local):** The FastAPI Python server runs locally. When a user inputs a YouTube link on the live website, the frontend securely routes the API request to `localhost` (`127.0.0.1:8000`). 
 * **The Result:** By running the backend locally, transcript requests are routed through a standard home Wi-Fi network (a residential IP). This completely bypasses YouTube's cloud-server blocks, successfully fetches the transcript, and passes the data to the Gemini API for summarization.
 
@@ -62,6 +62,6 @@ Access the Frontend:
 
 Option A (Local): Open your file explorer, locate the project folder, and double-click the index.html file to open it in your browser.
 
-Option B (Live Link): Visit your public GitHub Pages link. (Note: Because the live HTTPS website is talking to your local HTTP server, your browser's security might block it. If the summary doesn't load, look for a shield icon or site settings in your browser's address bar and select "Allow insecure content" or "Load unsafe scripts").
+Option B (Live Link): Visit your public render link. (Note: Because the live HTTPS website is talking to your local HTTP server, your browser's security might block it. If the summary doesn't load, look for a shield icon or site settings in your browser's address bar and select "Allow insecure content" or "Load unsafe scripts").
 
 Summarize! Paste a YouTube URL into the search bar, hit the button, and let the AI do the reading for you.
